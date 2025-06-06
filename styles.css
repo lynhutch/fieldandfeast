@@ -1,0 +1,254 @@
+/* CSS BY JOCELYN HUTCHERSON */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS REST */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+:root{
+    --midnight-blue: #1f2a44;
+    --olive-green: #768845;
+    --champagne-gold: #e5c185;
+    --linen: #f8f4ec;
+    --dark-charcoal: #2b2b2b;
+    --soft-white: #faf9f6;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+
+body{
+    font-family: 'Playfair Display';
+    font-size: 0.89rem;
+    width: 450px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.55rem;
+}
+
+header{
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+header img{
+    width: 200px;
+    height: auto;
+}
+
+header p{
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+nav{
+    background-color: var(--champagne-gold);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--midnight-blue);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    padding: 2rem 1rem 1rem 1rem;
+    line-height: 1.5rem;
+}
+
+main > section{
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--champagne-gold);
+}
+
+main h2{
+    padding-top: 1.6rem;
+    padding-bottom: 0.7rem;
+}
+
+main p{
+    padding-top: 0.5rem;
+}
+
+#offerings section{
+    border: 1px solid var(--olive-green);
+    border-radius: 10px;
+    background-color: var(--olive-green);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: var(--soft-white);
+    box-shadow: 1px 1px 5px var(--dark-charcoal);
+}
+
+#offerings h3{
+    font-weight: bold;
+}
+
+#offerings ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+div img{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+figcaption{
+    font-style: italic;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 0.5rem;
+}
+
+#gallery div{
+    margin: 1rem 0 0.5rem 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--dark-charcoal);
+}
+
+#gallery a{
+    text-decoration: none;
+    color: var(--soft-white);
+    font-weight: bold;
+}
+
+#gallery a:hover{
+    text-decoration: underline;
+}
+
+#gallery p:last-of-type{
+    border: 1px solid var(--olive-green);
+    background-color: var(--olive-green);
+    border-radius: 10px;
+    width: 100%;
+    margin: 1rem 0 0.5rem 0;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+footer{
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    text-align: center;
+    padding: 3rem 0 1.5rem 0;
+    line-height: 1.3rem;
+}
+
+footer address:last-of-type{
+    color: var(--champagne-gold);
+    font-weight: bold;
+    padding: 0 0 2rem 0;
+}
+
+footer p{
+    display: inline;
+    padding: 2rem 0 1rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--champagne-gold);
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* MEDIA QUERY (medium) */
+
+@media screen and (min-width: 600px){
+
+}
+
+/* MEDIA QUERY (large) */
+
+@media screen and (min-width: 900px){
+
+}
+
+/* MEDIA QUERY (xl) */
+
+@media screen and (min-width: 1200px){
+    
+}
