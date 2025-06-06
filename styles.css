@@ -68,7 +68,7 @@ table {
 body{
     font-family: 'Playfair Display';
     font-size: 0.89rem;
-    width: 450px;
+    min-width: 450px;
     margin: 0 auto;
 }
 
@@ -84,6 +84,10 @@ h2{
 
 h3{
     font-size: 1.55rem;
+}
+
+header, footer{
+    width: 100%;
 }
 
 header{
@@ -235,20 +239,77 @@ footer a:hover{
     text-decoration: underline;
 }
 
+
 /* MEDIA QUERY (medium) */
 
 @media screen and (min-width: 600px){
+    body{
+        margin: 0 auto;
+        font-size: 1rem;
+    }
 
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        column-gap: 2rem;
+    }
+
+    main{
+        padding: 0.5rem 2.5rem;
+    }
+
+    #offerings{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    #offerings h2{
+        grid-column: 1/-1;
+    }
+
+    #offerings h3{
+        line-height: 2rem;
+    }
+
+    #basket{
+        grid-column: 1/-1;
+    }
+    
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    #gallery h2{
+        grid-column: 1/-1;
+    }
+
+    #gallery p{
+        grid-column: 1/-1;
+    }
+
+    figcaption{
+        font-size: 0.9rem;
+        padding: 0 0.5rem 0.5rem 0.5rem;
+    }
 }
+
 
 /* MEDIA QUERY (large) */
 
 @media screen and (min-width: 900px){
-
+    #gallery{
+        display: grid;
+        grid-template-columns:
+    }
 }
 
 /* MEDIA QUERY (xl) */
 
 @media screen and (min-width: 1200px){
-    
+    main{
+        max-width: 1200px;
+    }
 }
